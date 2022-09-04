@@ -1,0 +1,14 @@
+.weather-forecast {
+    background-color: #0c3c4e;
+    text-align: center;
+    font-size: 10px;
+    color: #fbeae3;
+    position: absolute;
+    top: 425px;
+    width: 100%;
+  }
+  
+  .weather-forecast-min {
+    opacity: 0.55;
+  }
+  

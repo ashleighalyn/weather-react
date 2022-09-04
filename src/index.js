@@ -1,17 +1,42 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./styles.css";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import Search from "./Search";
+import City from "./City";
+import Weather from "./Weather";
+import Forecast from "./Forecast";
+import Footer from "./Footer";
+
+const rootElement = document.getElementById("root");
+const root = createRoot(rootElement);
+
 root.render(
-  <React.StrictMode>
+  <StrictMode>
     <App />
-  </React.StrictMode>
+  </StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+function App() {
+  return (
+    <div className="App">
+      <div class="container">
+        <div class="card">
+          <img
+            src="images/minimalistHills.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <Search />
+          <br />
+          <City />
+          <br />
+          <Weather />
+          <br />
+          <Forecast />
+        </div>
+      </div>
+      <Footer />
+    </div>
+  );
+}

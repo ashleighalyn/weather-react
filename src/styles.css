@@ -1,0 +1,12 @@
+.container {
+  text-align: center;
+  font-family: "Comfortaa", cursive;
+  padding: 30px;
+}
+
+.card {
+  border-radius: 15px;
+  margin: 0px auto;
+  background-size: contain;
+  width: 500px;
+}

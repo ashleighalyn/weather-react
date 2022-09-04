@@ -1,0 +1,54 @@
+#icon {
+    width: 80px;
+  }
+  
+  .weatherCondition {
+    background-color: #0c3c4e;
+    position: absolute;
+    text-align: center;
+    font-size: 15px;
+    width: 100%;
+    top: 280px;
+    left: 0px;
+    color: #fbeae3;
+    list-style: none;
+  }
+  .weather-temperature .active {
+    color: #fbeae3;
+    text-decoration: none;
+  }
+  
+  #celcius,
+  #fahrenheit {
+    text-decoration: none;
+  }
+  #temperature {
+    position: absolute;
+    text-align: center;
+    color: #fbeae3;
+    width: 100%;
+    top: 200px;
+    left: 0px;
+    font-weight: bold;
+    font-size: 75px;
+    text-shadow: 1px 2px 5px #07232e;
+  }
+  .units {
+    color: #fbeae3;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 215px;
+    left: 70px;
+    font-weight: bold;
+    font-size: 15px;
+    color: #fbeae3;
+    text-shadow: 1px 2px 5px #07232e;
+  }
+  
+  .info {
+    font-size: 10px;
+    margin-top: -15px;
+    margin-bottom: 30px;
+  }
+  

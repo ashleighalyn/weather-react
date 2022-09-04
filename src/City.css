@@ -1,0 +1,22 @@
+.currentcity {
+    position: absolute;
+    text-align: center;
+    font-size: 40px;
+    color: #fbeae3;
+    text-shadow: 1px 2px 5px #07232e;
+    width: 100%;
+    top: 90px;
+    left: 0px;
+  }
+  
+  .currenttime {
+    position: absolute;
+    text-align: center;
+    font-size: 15px;
+    width: 100%;
+    top: 140px;
+    left: 0px;
+    color: #fbeae3;
+    text-shadow: 1px 1px 5px #07232e;
+  }
+  
