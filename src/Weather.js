@@ -1,5 +1,5 @@
-import React from "react";
 import axios from "axios";
+import "./Date";
 
 export default function Weather () {
 
@@ -8,7 +8,6 @@ export default function Weather () {
       
         let forecastElement = document.querySelector("#forecast");
       
-        let days = ["Friday", "Saturday", "Sunday", "Monday"];
         let forecastHTML = `<div class="row">`;
         forecast.forEach(function (forecastDay, index) {
           if (index < 4) {
@@ -16,7 +15,7 @@ export default function Weather () {
               forecastHTML +
               `
                   <div class="col">
-                    <div class="weather-forecast-date">${formatDay(
+                    <div class="weather-forecast-date">${Date(
                       forecastDay.dt
                     )}</div>
                     <img
@@ -45,28 +44,7 @@ export default function Weather () {
       `;
         axios.get(apiURL).then(displayForecast);
       }
-      function displayWeatherCondition(response) {
-        let temperatureElement = document.querySelector("#temperature");
       
-        fahrenheitTemperature = response.data.main.temp;
-      
-        temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
-        let cityElement = document.querySelector("#city");
-        cityElement.innerHTML = response.data.name;
-        let humidityElement = document.querySelector("#humidity");
-        humidityElement.innerHTML = response.data.main.humidity;
-        let descriptionElement = document.querySelector("#description");
-        descriptionElement.innerHTML = response.data.weather[0].description;
-        let dateElement = document.querySelector("#date");
-        dateElement.innerHTML = formatDate(response.data.dt * 1000);
-        let windElement = document.querySelector("#wind");
-        windElement.innerHTML = Math.round(response.data.wind.speed);
-        let iconElement = document.querySelector("#icon");
-        iconElement.setAttribute(
-          "src",
-          `images/svg/${response.data.weather[0].icon}.svg`
-        );
       
         getForecast(response.data.coord);
       }
-}

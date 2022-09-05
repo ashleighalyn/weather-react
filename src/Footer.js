@@ -6,7 +6,7 @@ export default function Footer() {
     <div className="footer">
       <a
         href="https://github.com/ashleighalyn/SheCodes-Plus-Project"
-        target="_blank"
+        target="_blank" rel="noreferrer"
       >
         Open-Source Code
       </a>
