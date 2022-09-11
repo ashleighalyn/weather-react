@@ -46,5 +46,7 @@ export default function Weather () {
       }
       
       
-        getForecast(response.data.coord);
+        getForecast();
       }
+    
+      

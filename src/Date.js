@@ -1,7 +1,7 @@
 import React from "react";
 
 
-export default function Date(props) {
+export default function formatDate(props) {
 
     let months =["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
