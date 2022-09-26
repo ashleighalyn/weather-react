@@ -17,7 +17,7 @@ root.render(
   </StrictMode>
 );
 
-function App() {
+export default function App() {
   return (
     <div className="App">
       <div class="container">
